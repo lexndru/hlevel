@@ -1,0 +1,9 @@
+node_modules
+tmp
+.notes
+.env
+index.js
+index.d.ts
+*.conf
+*.zip
+package-lock.json

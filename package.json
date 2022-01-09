@@ -1,0 +1,34 @@
+{
+  "name": "artemis-node",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config . examples/localhost.json",
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandru Catrina",
+  "homepage": "https://github.com/lexndru/artemis-node",
+  "license": "MIT",
+  "dependencies": {
+    "abort-controller": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.6",
+    "uuid": "^8.3.2",
+    "ws": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.6",
+    "@types/node-fetch": "2.3",
+    "@types/uuid": "^8.3.4",
+    "@types/ws": "^8.2.2",
+    "typescript": "^4.5.4"
+  }
+}

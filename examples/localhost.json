@@ -1,0 +1,39 @@
+{
+    "when an user #joins the server": [
+        {
+            "Comment": "I want to check the permissions and receive basic user info",
+            "Call": "http://localhost:1121",
+            "HttpVerb": "get"
+        }
+    ],
+    "when an user needs it's own ip #task.<GetIpAddress>": [
+        {
+            "Comment": "I want to read the client's IP address from the internet",
+            "Call": "https://httpbin.org/ip",
+            "HttpVerb": "get",
+            "Then": {
+                "Comment": "I want to post the message to a service",
+                "AsyncCall": "http://localhost:5001/json",
+                "HttpVerb": "post",
+                "HttpHeaders": {
+                    "Content-Type": "application/json"
+                },
+                "Then": {
+                    "Comment": "I want to repost the message once again",
+                    "AsyncCall": "http://localhost:5001/buff",
+                    "HttpVerb": "post",
+                    "HttpHeaders": {
+                        "Content-Type": "plain/text"
+                    },
+                    "Then": null
+                }
+            }
+        }
+    ],
+    "when an user #quits or connection is closed": [
+        {
+            "Comment": "I want to log the date and time",
+            "Call": "http://localhost/log-server"
+        }
+    ]
+}
