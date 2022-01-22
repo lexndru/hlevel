@@ -30,6 +30,12 @@
             }
         }
     ],
+    "when an user texts another user #task.<TextMessage>": [
+        {
+            "Comment": "I want artemis to make an exchange between peers",
+            "Call": "self://peer"
+        }
+    ],
     "when an user #quits or connection is closed": [
         {
             "Comment": "I want to log the date and time",

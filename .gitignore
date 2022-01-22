@@ -2,8 +2,8 @@ node_modules
 tmp
 .notes
 .env
-index.js
-index.d.ts
+*.js
+*.d.ts
 *.conf
 *.zip
 package-lock.json
