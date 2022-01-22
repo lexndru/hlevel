@@ -7,3 +7,4 @@ tmp
 *.conf
 *.zip
 package-lock.json
+*.tgz

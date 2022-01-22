@@ -1,8 +1,8 @@
 {
-  "name": "hlevel",
+  "name": "hlevel-node",
   "version": "0.1.0",
   "description": "create and run high level business flows",
-  "main": "hlevel.js",
+  "main": "index.js",
   "bin": {
     "hl": "hlevel.js"
   },
